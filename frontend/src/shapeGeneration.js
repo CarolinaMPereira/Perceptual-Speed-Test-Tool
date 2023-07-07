@@ -61,15 +61,14 @@ export function genShape() {
     var key = keys[i];
     var options = [];
 
-    const indexOfKey = keys.indexOf(key);
-    var linksWithoutKey = options.splice(indexOfKey, 1);
+    var linksWithoutKey = links.filter(function (item) {
+      return item !== key;
+    });
 
     options = linksWithoutKey.sort(() => 0.5 - Math.random()).slice(0, 4);
-
     options.push(key);
 
     questionsArray.push([key, options.sort(() => 0.5 - Math.random())]);
   }
-  console.log("shapes", questionsArray);
   return questionsArray;
 }
