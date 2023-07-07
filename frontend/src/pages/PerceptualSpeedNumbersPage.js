@@ -67,6 +67,10 @@ export function PerceptualSpeedNumbersPage() {
   // get survey model
   const model = new Model(json);
 
+  model.onStarted.add(() => {
+    model.showNavigationButtons = false;
+  });
+
   return (
     <div className="container">
       <Survey model={model} onComplete={onComplete} />
