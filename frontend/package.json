@@ -1,0 +1,41 @@
+{
+  "name": "perceptual-speed-test-tool",
+  "version": "0.2.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/material": "^5.11.12",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.6.4",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^5.0.0",
+    "survey-core": "latest",
+    "survey-react-ui": "latest",
+    "surveyjs-widgets": "latest",
+    "uuid": "^9.0.0"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired --max_old_space_size=4096 build",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "jest-canvas-mock": "^2.3.1",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "react-app-rewired": "^2.2.1"
+  },
+  "description": "This Perceptual Speed Test Tool is a ReactJS App that measures PS through a set of questions adapted from [Ekstrom et al.][1], featuring identification of words with certain letters, number comparison, and shape recognition.",
+  "main": "config-overrides.js",
+  "author": "Carolina Pereira",
+  "license": "GPL 3.0"
+}
