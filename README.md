@@ -10,6 +10,24 @@ This Perceptual Speed Test Tool is a ReactJS App that measures PS through a set 
 
 ## Preview
 
+Find A test:
+
+<p align="center">
+    <img src="frontend\src\img\Find_A_demo.png" alt="Find A Test" width="800" style="display: block; margin: 0 auto"/>
+</p>
+
+Number Comparison test:
+
+<p align="center">
+    <img src="frontend\src\img\Numbers_demo.png" alt="Number Comparison Test" width="800" style="display: block; margin: 0 auto"/>
+</p>
+
+Shape Recognition test:
+
+<p align="center">
+    <img src="frontend\src\img\shapes_demo.png" alt="Shape Recognition Test" width="800" style="display: block; margin: 0 auto"/>
+</p>
+
 ## Run the application
 
 In order to save results in the PostgreSQL database, please create a `.env` file as shown in the sample provided.
