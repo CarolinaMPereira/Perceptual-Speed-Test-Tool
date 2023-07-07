@@ -1,5 +1,5 @@
 [![License: GPL-3.0](https://badgen.net/github/license/CarolinaMPereira/Perceptual-Speed-Test-Tool)](https://www.gnu.org/licenses/gpl-3.0)
-[![Last release](https://badgen.net/github/release/CarolinaMPereira/Perceptual-Speed-Test-Tool)](https://github.com/CarolinaMPereira/Perceptual-Speed-Test-Tool)
+
 
 # Perceptual Speed Test Tool
 
