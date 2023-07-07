@@ -1,6 +1,11 @@
 import { React } from "react";
+import { Button } from "@mui/material";
+import { useHistory } from "react-router-dom";
 
 export function IntroPage() {
+  /** History for route. */
+  const history = useHistory();
+
   return (
     <div>
       <div
@@ -11,22 +16,43 @@ export function IntroPage() {
           textAlign: "justify",
         }}
       >
-        <h3 className="header"> Visual Working Memory Test Tool</h3>
+        <h3 className="header"> Perceptual Speed Test Tool</h3>
         <p className="text">
           {" "}
-          Visual Working Memory (VWM) is the short-term memory associated with
-          cognitive tasks, namely the retention of visual information between
-          eye fixations.
+          Perceptual Speed (PS) is the cognitive ability related to comparison
+          tasks as higher Perceptual Speed means greater accuracy in identifying
+          different objects or patterns.
         </p>
         <p className="text">
-          The Visual Working Memory Test Tool is a ReactJS App that measures VWM
-          through an Image Change Detection task adapted from Fukuda and Vogel's
-          study.
+          This Perceptual Speed Test Tool is a ReactJS App that measures PS
+          through a set of questions adapted from Ekstrom et al.'s "Manual for
+          Kit of Reference Tests for Cognitive Factors", featuring
+          identification of words with certain letters, number comparison, and
+          shape recognition.
         </p>
         <p className="text">
-          Click on Test Instructions to watch a tutorial of the change detection
-          test.
+          Click on Start to begin the test sequence or choose a test in
+          particular from the menu.
         </p>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          margin: "auto",
+          justifyContent: "center",
+        }}
+      >
+        <Button
+          variant="outlined"
+          size="large"
+          onClick={() => {
+            history.replace("/perceptual-speed-find-a/");
+          }}
+          className="buttonText"
+          style={{ marginLeft: "1em" }}
+        >
+          Start
+        </Button>
       </div>
     </div>
   );
