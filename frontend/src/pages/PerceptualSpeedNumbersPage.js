@@ -7,7 +7,7 @@ import "survey-core/defaultV2.css";
 
 import { genNumber } from "../numberGeneration.js";
 import { updateParticipantPSNumbers } from "../updateParticipant.js";
-import { json } from "../data/PS2_json.js";
+import { json } from "../surveys/PS_numbers_json.js";
 
 StylesManager.applyTheme("defaultV2");
 

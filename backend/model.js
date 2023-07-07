@@ -11,7 +11,7 @@ const pool = new Pool({
 const createTable = () => {
   return new Promise(function (resolve, reject) {
     pool.query(
-      `CREATE TABLE IF NOT EXISTS "testTable" (
+      `CREATE TABLE IF NOT EXISTS "participants" (
         "user_id" VARCHAR(30),
         "ps_find_a_score" NUMERIC,
         "ps_find_a_time" NUMERIC,

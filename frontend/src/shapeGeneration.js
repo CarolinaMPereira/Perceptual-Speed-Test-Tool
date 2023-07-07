@@ -70,6 +70,6 @@ export function genShape() {
 
     questionsArray.push([key, options.sort(() => 0.5 - Math.random())]);
   }
-
+  console.log("shapes", questionsArray);
   return questionsArray;
 }

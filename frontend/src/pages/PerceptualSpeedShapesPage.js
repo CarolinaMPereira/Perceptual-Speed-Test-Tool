@@ -5,7 +5,7 @@ import { Survey } from "survey-react-ui";
 import "survey-core/defaultV2.css";
 
 import { genShape } from "../shapeGeneration.js";
-import { json } from "../data/PS3_json.js";
+import { json } from "../surveys/PS_shapes_json.js";
 import { updateParticipantPSShapes } from "../updateParticipant.js";
 
 StylesManager.applyTheme("defaultV2");
@@ -34,16 +34,17 @@ export function PerceptualSpeedShapesPage() {
   const shapes = genShape();
   for (let index = 1; index < json.pages.length; index++) {
     for (let j = 0; j < 5; j++) {
-      json.pages[index].elements[0].imageLink = shapes[index][0];
-      json.pages[index].elements[1].choices[j].imageLink = shapes[index][1][j];
+      json.pages[index].elements[0].imageLink = shapes[index - 1][0];
+      json.pages[index].elements[1].choices[j].imageLink =
+        shapes[index - 1][1][j];
     }
-    if (shapes[index][0] === shapes[index][1][0]) {
+    if (shapes[index - 1][0] === shapes[index - 1][1][0]) {
       ans.push("A");
-    } else if (shapes[index][0] === shapes[index][1][1]) {
+    } else if (shapes[index - 1][0] === shapes[index - 1][1][1]) {
       ans.push("B");
-    } else if (shapes[index][0] === shapes[index][1][2]) {
+    } else if (shapes[index - 1][0] === shapes[index - 1][1][2]) {
       ans.push("C");
-    } else if (shapes[index][0] === shapes[index][1][3]) {
+    } else if (shapes[index - 1][0] === shapes[index - 1][1][3]) {
       ans.push("D");
     } else {
       ans.push("E");
