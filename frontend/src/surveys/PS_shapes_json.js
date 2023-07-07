@@ -1,10 +1,8 @@
 export const json = {
-  // title: "Compare Numbers",
-  locale: "pt",
   showTimerPanel: "top",
   maxTimeToFinish: 90,
   firstPageIsStarted: true,
-  startSurveyText: { en: "Start", pt: "Começar" },
+  startSurveyText: "Start",
   pages: [
     {
       name: "intropage",
@@ -12,14 +10,9 @@ export const json = {
         {
           type: "html",
           name: "PS3_intro",
-          html: {
-            en: `<h2>In this question you will be presented a shape and five options. You must choose the option that contains the
+          html: `<h2>In this question you will be presented a shape and five options. You must choose the option that contains the
             shape that matches the prompted one.</h2>\n<h4>You have 90 seconds to answer 48 questions. Do your best to answer them 
             all correctly.</h4>`,
-            pt: `<h2>Nesta questão, irá ser-lhe apresentada uma forma e cinco opções. Deverá escolher a opção que contém a
-            forma que corresponda à solicitada.</h2>\n<h4>Tem 90 segundos para responder a 48 perguntas. Faça o possível para respondê-las
-            corretamente.</h4>`,
-          },
         },
       ],
     },
@@ -37,10 +30,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question1",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -87,10 +77,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question2",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -137,10 +124,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question3",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -187,10 +171,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question4",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -237,10 +218,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question5",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -287,10 +265,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question6",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -337,10 +312,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question7",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -387,10 +359,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question8",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -437,10 +406,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question9",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -487,10 +453,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question10",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -537,10 +500,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question11",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -587,10 +547,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question12",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -637,10 +594,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question13",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -687,10 +641,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question14",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -737,10 +688,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question15",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -787,10 +735,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question16",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -837,10 +782,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question17",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -887,10 +829,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question18",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -937,10 +876,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question19",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -987,10 +923,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question20",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1037,10 +970,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question21",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1087,10 +1017,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question22",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1137,10 +1064,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question23",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1187,10 +1111,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question24",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1237,10 +1158,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question25",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1287,10 +1205,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question26",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1337,10 +1252,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question27",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1387,10 +1299,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question28",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1437,10 +1346,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question29",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1487,10 +1393,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question30",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1537,10 +1440,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question31",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1587,10 +1487,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question32",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1637,10 +1534,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question33",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1687,10 +1581,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question34",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1737,10 +1628,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question35",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1787,10 +1675,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question36",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1837,10 +1722,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question37",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1887,10 +1769,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question38",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1937,10 +1816,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question39",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -1987,10 +1863,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question40",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2037,10 +1910,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question41",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2087,10 +1957,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question42",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2137,10 +2004,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question43",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2187,10 +2051,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question44",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2237,10 +2098,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question45",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2287,10 +2145,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question46",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2337,10 +2192,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question47",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
@@ -2387,10 +2239,7 @@ export const json = {
         {
           type: "imagepicker",
           name: "question48",
-          title: {
-            en: "Which of these shapes is the same as the one above?",
-            pt: "Qual destas formas é igual à apresentada acima?",
-          },
+          title: "Which of these shapes is the same as the one above?",
           isRequired: false,
           choices: [
             {
