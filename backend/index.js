@@ -38,7 +38,7 @@ app.get("/", (req, res) => {
     });
 });
 
-app.post("/participants", (req, res) => {
+app.post("/ps", (req, res) => {
   participant_model
     .createParticipant(req.body)
     .then((response) => {
@@ -49,7 +49,7 @@ app.post("/participants", (req, res) => {
     });
 });
 
-app.put("/participants/ps-letter-a", (req, res) => {
+app.put("/ps/ps-letter-a", (req, res) => {
   participant_model
     .updateParticipantPSLetterA(req.body)
     .then((response) => {
@@ -60,7 +60,7 @@ app.put("/participants/ps-letter-a", (req, res) => {
     });
 });
 
-app.put("/participants/ps-numbers", (req, res) => {
+app.put("/ps/ps-numbers", (req, res) => {
   participant_model
     .updateParticipantPSNumbers(req.body)
     .then((response) => {
@@ -71,7 +71,7 @@ app.put("/participants/ps-numbers", (req, res) => {
     });
 });
 
-app.put("/participants/ps-shapes", (req, res) => {
+app.put("/ps/ps-shapes", (req, res) => {
   participant_model
     .updateParticipantPSShapes(req.body)
     .then((response) => {

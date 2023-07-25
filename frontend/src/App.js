@@ -49,8 +49,9 @@ localStorage.setItem("uid", user_id);
 console.log("Your UID: ", user_id);
 
 export default function PhantomEffectApp() {
-  createTable();
-  createParticipant(user_id);
+  createTable().then(() => {
+    createParticipant(user_id);
+  });
 
   return (
     <Router>

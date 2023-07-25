@@ -11,8 +11,8 @@ const pool = new Pool({
 const createTable = () => {
   return new Promise(function (resolve, reject) {
     pool.query(
-      `CREATE TABLE IF NOT EXISTS "participants" (
-        "user_id" VARCHAR(30),
+      `CREATE TABLE IF NOT EXISTS ps (
+        "user_id" VARCHAR(40),
         "ps_find_a_score" NUMERIC,
         "ps_find_a_time" NUMERIC,
         "ps_numbers_score" NUMERIC,
@@ -34,16 +34,13 @@ const createTable = () => {
 
 const getParticipant = () => {
   return new Promise(function (resolve, reject) {
-    pool.query(
-      "SELECT * FROM participants ORDER BY user_id ASC",
-      (error, results) => {
-        if (error) {
-          reject(error);
-          console.log(error);
-        }
-        resolve(results.rows);
+    pool.query("SELECT * FROM ps ORDER BY user_id ASC", (error, results) => {
+      if (error) {
+        reject(error);
+        console.log(error);
       }
-    );
+      resolve(results.rows);
+    });
   });
 };
 
@@ -51,7 +48,7 @@ const createParticipant = (body) => {
   return new Promise(function (resolve, reject) {
     const { user_id } = body;
     pool.query(
-      "INSERT INTO participants (user_id) VALUES ($1) RETURNING *",
+      "INSERT INTO ps (user_id) VALUES ($1) RETURNING *",
       [user_id],
       (error, results) => {
         if (error) {
@@ -68,7 +65,7 @@ const updateParticipantPSLetterA = (body) => {
   return new Promise(function (resolve, reject) {
     const { ps_score_a, ps_time_a, user_id } = body;
     pool.query(
-      "UPDATE participants SET ps_find_a_score = ($1), ps_find_a_time = ($2) WHERE user_id = $3",
+      "UPDATE ps SET ps_find_a_score = ($1), ps_find_a_time = ($2) WHERE user_id = $3",
       [ps_score_a, ps_time_a, user_id],
       (error, results) => {
         if (error) {
@@ -85,7 +82,7 @@ const updateParticipantPSNumbers = (body) => {
   return new Promise(function (resolve, reject) {
     const { ps_score_numbers, ps_time_numbers, user_id } = body;
     pool.query(
-      "UPDATE participants SET ps_numbers_score = ($1), ps_numbers_time = ($2) WHERE user_id = $3",
+      "UPDATE ps SET ps_numbers_score = ($1), ps_numbers_time = ($2) WHERE user_id = $3",
       [ps_score_numbers, ps_time_numbers, user_id],
       (error, results) => {
         if (error) {
@@ -102,7 +99,7 @@ const updateParticipantPSShapes = (body) => {
   return new Promise(function (resolve, reject) {
     const { ps_score_shapes, ps_time_shapes, user_id } = body;
     pool.query(
-      "UPDATE participants SET ps_shapes_score = ($1), ps_shapes_time = ($2) WHERE user_id = $3",
+      "UPDATE ps SET ps_shapes_score = ($1), ps_shapes_time = ($2) WHERE user_id = $3",
       [ps_score_shapes, ps_time_shapes, user_id],
       (error, results) => {
         if (error) {
