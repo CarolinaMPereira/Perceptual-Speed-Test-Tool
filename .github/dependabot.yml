@@ -8,10 +8,6 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
-    automerged_updates:
-      - match:
-          update-types: ["version-update:semver-minor", "version-update:semver-patch"]
-        merge-method: "squash"
 
   - package-ecosystem: "npm"
     directory: "/backend"
@@ -21,10 +17,6 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
-    automerged_updates:
-      - match:
-          update-types: ["version-update:semver-minor", "version-update:semver-patch"]
-        merge-method: "squash"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -34,7 +26,3 @@ updates:
     ignore:
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
-    automerged_updates:
-      - match:
-          update-types: ["version-update:semver-minor", "version-update:semver-patch"]
-        merge-method: "squash"
